@@ -238,7 +238,7 @@ debug.sf.early_phase_offset_ns=1500000 \
 debug.sf.early_app_phase_offset_ns=1500000 \
 debug.sf.early_gl_phase_offset_ns=3000000 \
 debug.sf.early_gl_app_phase_offset_ns=15000000
-    
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
@@ -250,10 +250,6 @@ net.tcp.2g_init_rwnd=10
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.use_fifo_ui=1
-
-# Usb
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.usb.config.extra=none
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
