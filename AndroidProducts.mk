@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rosy.mk
+    $(LOCAL_DIR)/derp_rosy.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineeage_rosy-userdebug \
-    lineage_rosy-user \
-    lineage_rosy-eng
+    derp_rosy-userdebug \
+    derp_rosy-user \
+    derp_rosy-eng
