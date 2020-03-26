@@ -592,40 +592,24 @@
     <!-- Disable rounded corners on windows to improve graphics performance --> 
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 
-    <!-- Boost parameters which get passed to QPerformance -->
-    <integer-array name="onbootboost_param_value">
-        <item>0x40C00000</item> <!-- SCHEDBOOST resource opcode-->
-        <item>0x1</item>        <!-- SCHEDBOOST resource value-->
-        <item>0x40804000</item> <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode-->
-        <item>0xFFF</item>      <!-- CPUBOOST MAX_FREQ resource value-->
-        <item>0x40804100</item> <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode-->
-        <item>0xFFF</item>      <!-- CPUBOOST MAX_FREQ resource value-->
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode -->
-        <item>0x4B0</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode -->
-        <item>0x708</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-    </integer-array>
+   <!-- Vibrator pattern for feedback about a long screen/key press -->
+   <integer-array name="config_longPressVibePattern">
+       <item>0</item>
+       <item>15</item> 
+       <item>10</item>
+   </integer-array>
 
-    <!-- Boost parameters which get passed to QPerformance -->
-    <integer-array name="qboost_weak_param_value">
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode -->
-        <item>0x514</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode -->
-        <item>0x578</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-    </integer-array>
-    <integer-array name="qboost_strong_param_value">
-        <item>0x40804000</item> <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode-->
-        <item>0xFFF</item>      <!-- CPUBOOST MAX_FREQ resource value-->
-        <item>0x40804100</item> <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode-->
-        <item>0xFFF</item>      <!-- CPUBOOST MAX_FREQ resource value-->
-        <item>0x41800000</item> <!-- CPUBW_MIN_FREQ resource opcode-->
-        <item>140</item>        <!-- CPUBW_MIN_FREQ resource value-->
-        <item>0x40800100</item> <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode -->
-        <item>0x578</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode -->
-	<item>0x6A4</item>      <!-- CPUBOOST MIN_FREQ resource value -->
-        <item>0x40400000</item> <!-- PWR_CLPS DIS resource opcode-->
-        <item>0x1</item>        <!-- PWR_CLPS DIS resource value-->
-    </integer-array>
+   <!-- Vibrator pattern for feedback about touching a virtual key -->
+   <integer-array name="config_virtualKeyVibePattern">
+       <item>0</item>
+       <item>20</item>
+       <item>15</item>
+   </integer-array>
+
+   <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+   <integer-array name="config_keyboardTapVibePattern">
+       <item>12</item>
+   </integer-array>
+
 </resources>
 
